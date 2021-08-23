@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #0b0c10;
+    --secondary-color: #1f2833;
+    --tertiary-color: #c5c6c7;
+    --quarternary-color: #66fcf1;
+    --quinary-color: #45a29e;
+}
+
+body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Header and Nav Bar */
+
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--quarternary-color);
+    text-shadow: 0 0 10px rgb(102, 252, 241, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--quarternary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header nav ul li a:hover {
+    background: var(--quinary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+/* End of Header and Nav Bar */
