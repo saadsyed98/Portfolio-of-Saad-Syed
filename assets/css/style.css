@@ -3,16 +3,15 @@
     --secondary-color: #1f2833;
     --tertiary-color: #c5c6c7;
     --quarternary-color: #66fcf1;
-    --quinary-color: #45a29e;
 }
 
 body {
     color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Header and Nav Bar */
-
 header {
     padding: 20px 35px;
     background-color: var(--primary-color);
@@ -27,7 +26,7 @@ header {
 header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
+    font-size: 56px;
     color: var(--quarternary-color);
     text-shadow: 0 0 10px rgb(102, 252, 241, 0.5);
 }
@@ -57,9 +56,57 @@ header nav ul {
   }
   
   header nav ul li a:hover {
-    background: var(--quinary-color);
+    background: var(--quarternary-color);
     color: var(--primary-color);
     border-radius: 15px;
     text-shadow: none;
   }
 /* End of Header and Nav Bar */
+
+/* Start of Footer */
+
+/* End of Footer */
+
+/* Start of Section Title */
+.section-title {
+    font-size: 36px;
+    border-left: 3px solid;
+    border-bottom: 3px solid;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    margin: 10px auto 35px auto;
+    width: 85%;
+}
+/* End of Section Title */
+
+/* Start of About Me */
+.bio {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;
+    color: var(--tertiary-color);
+}
+
+.bio img {
+    width: 65%;
+    border: 2px solid var(--quarternary-color);
+}
+
+.bio p {
+    line-height: 1.2;
+    font-size: 18px;
+    width: 45%;
+    text-align: center;
+}
+
+.bio p span {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--quarternary-color);
+    font-style: italic;
+}
+/* End of About Me */
